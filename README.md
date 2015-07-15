@@ -13,13 +13,13 @@ var setup = require('dotsunited-sliding-navigation/lib/setup');
 setup('sliding-navigation');
 ```
 
-```css
+```less
 @import "~dotsunited-sliding-navigation/lib/mixins";
 
 .sliding-navigation {
     .dotsunited-sliding-navigation();
 
-    /* Custom styles */
+    // Custom styles
     position: absolute;
     left: 0;
     right: 0;
