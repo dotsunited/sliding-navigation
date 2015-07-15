@@ -1,0 +1,130 @@
+@dotsunited-sliding-navigation-base-z-index: 2000;
+@dotsunited-sliding-navigation-transition-duration: 350ms;
+@dotsunited-sliding-navigation-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+
+.dotsunited-sliding-navigation(
+    @base-z-index: @dotsunited-sliding-navigation-base-z-index;
+    @base-transition-duration: @dotsunited-sliding-navigation-transition-duration;
+    @transition-timing-function: @dotsunited-sliding-navigation-transition-timing-function
+) {
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+
+    * {
+        -webkit-backface-visibility: hidden;
+    }
+
+    ul {
+        position: absolute;
+        top: 0;
+        left: 100%;
+
+        z-index: @base-z-index;
+        display: none;
+
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+
+        width: 100%;
+        height: 100%;
+
+        transition: transform @base-transition-duration @transition-timing-function;
+
+        .no-csstransforms3d & {
+            transition: left @base-transition-duration @transition-timing-function;
+        }
+    }
+
+    > ul {
+        left: 0;
+        display: block;
+    }
+
+    & &__parent {
+        transform: translate3d(-100%, 0, 0);
+        display: block;
+
+        .no-csstransforms3d & {
+            left: 0;
+        }
+
+        .no-csstransforms3d > ul& {
+            left: 0;
+        }
+    }
+
+    & &__visible {
+        z-index: @base-z-index + 1;
+        display: block;
+    }
+
+    & &__scroll {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+};
+
+.dotsunited-sliding-navigation-open-button(
+    @base-z-index: @dotsunited-sliding-navigation-base-z-index
+) {
+    .dotsunited-sliding-navigation-button();
+
+    z-index: @base-z-index + 999;
+
+    // https://developers.google.com/speed/docs/insights/SizeTapTargetsAppropriately
+    width: 48px;
+    height: 48px;
+
+    background: url(img/open.svg) 50% 50% no-repeat;
+    background-size: auto 16px;
+
+    .no-svg {
+        background-image: url(img/open.png);
+    }
+}
+
+.dotsunited-sliding-navigation-back-button(
+    @base-z-index: @dotsunited-sliding-navigation-base-z-index
+) {
+    .dotsunited-sliding-navigation-button();
+
+    z-index: @base-z-index + 999;
+
+    text-indent: 24px;
+
+    // https://developers.google.com/speed/docs/insights/SizeTapTargetsAppropriately
+    width: 100%;
+    height: 48px;
+
+    background: url(img/back.svg) 0 50% no-repeat;
+    background-size: auto 16px;
+
+    .no-svg {
+        background-image: url(img/back.png);
+    }
+}
+
+.dotsunited-sliding-navigation-button() {
+    cursor: pointer;
+    padding: 0;
+
+    // <button> reset
+    -webkit-appearance: none;
+    border: 0;
+    background: none;
+    outline: none;
+    text-shadow: none;
+    box-shadow: none;
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+
+    &::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+}

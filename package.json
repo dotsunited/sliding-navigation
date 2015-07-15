@@ -1,0 +1,18 @@
+{
+  "name": "dotsunited-sliding-navigation",
+  "title": "Sliding Navigation",
+  "description": "Sliding Navigation utilities.",
+  "author": {
+    "name": "Jan Sorgalla",
+    "url": "jan.sorgalla@dotsunited.de"
+  },
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dotsunited/sliding-navigation.git"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "jquery": ">=1.7"
+  }
+}
