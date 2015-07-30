@@ -4,7 +4,8 @@
   "description": "Sliding Navigation utilities.",
   "author": {
     "name": "Jan Sorgalla",
-    "url": "jan.sorgalla@dotsunited.de"
+    "email": "jan.sorgalla@dotsunited.de",
+    "url" : "https://dotsunited.de"
   },
   "version": "1.0.2",
   "repository": {
