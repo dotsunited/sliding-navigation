@@ -1,0 +1,61 @@
+@import "../../lib/mixins";
+
+.clearfix() {
+    zoom: 1;
+    &:before,
+    &:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+.sliding-navigation {
+    .dotsunited-sliding-navigation();
+
+    position: relative;
+    max-width: 500px;
+    height: 100%;
+    background: #000;
+
+    font-family: sans-serif;
+
+    li {
+        .clearfix();
+    }
+
+    a {
+        display: block;
+        padding: 14px 20px;
+        color: #fff;
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+    }
+}
+
+.sliding-navigation__open-button {
+    .dotsunited-sliding-navigation-open-button();
+
+    float: right;
+
+    opacity: .5;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.sliding-navigation__back {
+    padding: 0 10px;
+    background: rgba(255, 255, 255, .1);
+}
+
+.sliding-navigation__back-button {
+    .dotsunited-sliding-navigation-back-button();
+    color: #fff;
+}
