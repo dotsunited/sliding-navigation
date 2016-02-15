@@ -54,6 +54,10 @@
         display: block;
 
         .no-csstransforms3d & {
+            // Reset transform in case Modernizr reports that 3d transforms are
+            // not supported (eg. if the implementation is buggy) but the
+            // browser _does_ support it (at least partially).
+            transform: translate3d(0, 0, 0);
             left: 0;
         }
     }
