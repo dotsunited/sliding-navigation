@@ -94,9 +94,9 @@
     background: @dotsunited-sliding-navigation-open-button-background-image-svg 50% 50% no-repeat;
     background-size: auto 24px;
 
-    .no-svg & {
-        background-image: @dotsunited-sliding-navigation-open-button-background-image-fallback;
-    }
+    .dotsunited-sliding-navigation-button-background-image-fallback(
+        @dotsunited-sliding-navigation-open-button-background-image-fallback
+    );
 }
 
 .dotsunited-sliding-navigation-back-button(
@@ -116,9 +116,9 @@
     background: @dotsunited-sliding-navigation-back-button-background-image-svg 0 50% no-repeat;
     background-size: auto 24px;
 
-    .no-svg & {
-        background-image: @dotsunited-sliding-navigation-back-button-background-image-fallback;
-    }
+    .dotsunited-sliding-navigation-button-background-image-fallback(
+        @dotsunited-sliding-navigation-back-button-background-image-fallback
+    );
 }
 
 .dotsunited-sliding-navigation-button() {
@@ -140,5 +140,11 @@
     &::-moz-focus-inner {
         border: 0;
         padding: 0;
+    }
+}
+
+.dotsunited-sliding-navigation-button-background-image-fallback(@fallback-image: none) when not (@fallback-image = none) {
+    .no-svg & {
+        background-image: @fallback-image;
     }
 }
