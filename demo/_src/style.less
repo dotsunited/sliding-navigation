@@ -25,6 +25,8 @@ body {
     background: #000;
 
     font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1;
 
     li {
         .clearfix();
@@ -32,9 +34,14 @@ body {
 
     a {
         display: block;
-        padding: 14px 20px;
+        padding: 16px 20px;
         color: #fff;
-        border-bottom: 1px solid rgba(255, 255, 255, .1);
+        border-bottom: 1px solid #222;
+
+        &:active,
+        &:focus {
+            background: #222;
+        }
     }
 }
 
@@ -52,7 +59,12 @@ body {
 
 .sliding-navigation__back {
     padding: 0 14px;
-    background: rgba(255, 255, 255, .1);
+    background: #222;
+
+    &:active,
+    &:focus {
+        background: #333;
+    }
 }
 
 .sliding-navigation__back-button {
