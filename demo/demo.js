@@ -503,8 +503,13 @@
 	                    el.attr('aria-haspopup', 'true');
 	                    sub.attr('aria-expanded', 'false');
 
-	                    if (options.openButtonElement) {
-	                        $(options.openButtonElement)
+	                    var openButtonElement = option(
+	                        options.openButtonElement,
+	                        this
+	                    );
+
+	                    if (openButtonElement) {
+	                        $(openButtonElement)
 	                            .prependTo(el)
 	                            .on('click', function(e) {
 	                                e.preventDefault();
@@ -525,10 +530,15 @@
 	                        ;
 	                    }
 
-	                    if (options.backButtonElement) {
-	                        $(options.backButtonElement)
+	                    var backButtonElement = option(
+	                        options.backButtonElement,
+	                        this
+	                    );
+
+	                    if (backButtonElement) {
+	                        $(backButtonElement)
 	                            .html(option(options.backButtonLabel, this))
-	                            .wrap(options.backElement)
+	                            .wrap(option(options.backElement, this))
 	                            .parent()
 	                            .prependTo(sub)
 	                            .on('click', function(e) {
