@@ -452,6 +452,7 @@
 	        namespace = namespace || 'dotsunited-sliding-navigation';
 
 	        options = $.extend({}, {
+	            selector: '.' + namespace,
 	            openOnItemClick: false,
 	            openButtonElement: '<button class="' + namespace + '__open-button"></button>',
 	            backElement: '<li class="' + namespace + '__back"></li>',
@@ -467,9 +468,10 @@
 	        var activeId = namespace + '-active';
 
 	        $(function() {
-	            var container = $('.' + namespace);
+	            var container = $(option(options.selector));
 
 	            container
+	                .addClass(namespace)
 	                .find('ul,ol')
 	                .attr('role', 'menu')
 	                .eq(0)
