@@ -93,7 +93,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  margin: 0;\n}\n.sliding-navigation {\n  -webkit-backface-visibility: hidden;\n  overflow: hidden;\n  position: absolute;\n  width: 50%;\n  max-width: 500px;\n  height: 100%;\n  background: #000;\n  font-family: sans-serif;\n  font-size: 16px;\n  line-height: 1;\n}\n.sliding-navigation * {\n  -webkit-backface-visibility: hidden;\n}\n.sliding-navigation ul {\n  position: absolute;\n  top: 0;\n  left: 100%;\n  z-index: 2000;\n  display: none;\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  -webkit-overflow-scrolling: touch;\n  -ms-overflow-style: -ms-autohiding-scrollbar;\n  width: 100%;\n  height: 100%;\n  transition: transform 350ms cubic-bezier(0.23, 1, 0.32, 1);\n}\n.no-csstransforms3d .sliding-navigation ul {\n  transition: left 350ms cubic-bezier(0.23, 1, 0.32, 1);\n}\n.sliding-navigation > ul {\n  left: 0;\n  display: block;\n}\n.sliding-navigation .sliding-navigation__parent {\n  transform: translate3d(-100%, 0, 0);\n  display: block;\n}\n.no-csstransforms3d .sliding-navigation .sliding-navigation__parent {\n  transform: translate3d(0, 0, 0);\n  left: 0;\n}\n.no-csstransforms3d .sliding-navigation > .sliding-navigation__parent {\n  left: -100%;\n}\n.sliding-navigation .sliding-navigation__visible {\n  z-index: 2001;\n  display: block;\n}\n.sliding-navigation .sliding-navigation__scroll {\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n.sliding-navigation li {\n  zoom: 1;\n}\n.sliding-navigation li:before,\n.sliding-navigation li:after {\n  content: \" \";\n  /* 1 */\n  display: table;\n  /* 2 */\n}\n.sliding-navigation li:after {\n  clear: both;\n}\n.sliding-navigation a {\n  display: block;\n  padding: 16px 20px;\n  color: #fff;\n  border-bottom: 1px solid #222;\n}\n.sliding-navigation a:active,\n.sliding-navigation a:focus {\n  background: #222;\n}\n.sliding-navigation2 {\n  right: 0;\n}\n.sliding-navigation__open-button {\n  cursor: pointer;\n  padding: 0;\n  -webkit-appearance: none;\n  border: 0;\n  background: none;\n  outline: none;\n  text-shadow: none;\n  box-shadow: none;\n  text-align: left;\n  text-decoration: none;\n  color: inherit;\n  font: inherit;\n  position: relative;\n  z-index: 2999;\n  width: 48px;\n  height: 48px;\n  background: url(" + __webpack_require__(5) + ") 50% 50% no-repeat;\n  background-size: auto 24px;\n  float: right;\n  opacity: .5;\n}\n.sliding-navigation__open-button::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n.no-svg .sliding-navigation__open-button {\n  background-image: url(" + __webpack_require__(6) + ");\n}\n.sliding-navigation__open-button:hover {\n  opacity: 1;\n}\n.sliding-navigation__back {\n  padding: 0 14px;\n  background: #222;\n}\n.sliding-navigation__back:active,\n.sliding-navigation__back:focus {\n  background: #333;\n}\n.sliding-navigation__back-button {\n  cursor: pointer;\n  padding: 0;\n  -webkit-appearance: none;\n  border: 0;\n  background: none;\n  outline: none;\n  text-shadow: none;\n  box-shadow: none;\n  text-align: left;\n  text-decoration: none;\n  color: inherit;\n  font: inherit;\n  position: relative;\n  z-index: 2999;\n  text-indent: 24px;\n  width: 100%;\n  height: 48px;\n  background: url(" + __webpack_require__(7) + ") 0 50% no-repeat;\n  background-size: auto 24px;\n  color: #fff;\n}\n.sliding-navigation__back-button::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n.no-svg .sliding-navigation__back-button {\n  background-image: url(" + __webpack_require__(8) + ");\n}\n", ""]);
+	exports.push([module.id, ".sliding-navigation {\n  -webkit-backface-visibility: hidden;\n  overflow: hidden;\n  position: absolute;\n  left: 0;\n  width: 50%;\n  max-width: 500px;\n  height: 300px;\n  background: #000;\n  font-family: sans-serif;\n  font-size: 16px;\n  line-height: 1;\n}\n.sliding-navigation * {\n  -webkit-backface-visibility: hidden;\n}\n.sliding-navigation ul {\n  position: absolute;\n  top: 0;\n  left: 100%;\n  z-index: 2000;\n  display: none;\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  -webkit-overflow-scrolling: touch;\n  -ms-overflow-style: -ms-autohiding-scrollbar;\n  width: 100%;\n  height: 100%;\n  transition: transform 350ms cubic-bezier(0.23, 1, 0.32, 1);\n}\n.no-csstransforms3d .sliding-navigation ul {\n  transition: left 350ms cubic-bezier(0.23, 1, 0.32, 1);\n}\n.sliding-navigation > ul {\n  left: 0;\n  display: block;\n}\n.sliding-navigation .sliding-navigation__parent {\n  transform: translate3d(-100%, 0, 0);\n  display: block;\n}\n.no-csstransforms3d .sliding-navigation .sliding-navigation__parent {\n  transform: translate3d(0, 0, 0);\n  left: 0;\n}\n.no-csstransforms3d .sliding-navigation > .sliding-navigation__parent {\n  left: -100%;\n}\n.sliding-navigation .sliding-navigation__visible {\n  z-index: 2001;\n  display: block;\n}\n.sliding-navigation .sliding-navigation__scroll {\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n.sliding-navigation li {\n  zoom: 1;\n}\n.sliding-navigation li:before,\n.sliding-navigation li:after {\n  content: \" \";\n  /* 1 */\n  display: table;\n  /* 2 */\n}\n.sliding-navigation li:after {\n  clear: both;\n}\n.sliding-navigation a {\n  display: block;\n  padding: 16px 20px;\n  color: #fff;\n  border-bottom: 1px solid #222;\n}\n.sliding-navigation a:active,\n.sliding-navigation a:focus {\n  background: #222;\n}\n.sliding-navigation2 {\n  left: auto;\n  right: 0;\n}\n.sliding-navigation__open-button {\n  cursor: pointer;\n  padding: 0;\n  -webkit-appearance: none;\n  border: 0;\n  background: none;\n  text-shadow: none;\n  box-shadow: none;\n  text-align: left;\n  text-decoration: none;\n  color: inherit;\n  font: inherit;\n  position: relative;\n  z-index: 2999;\n  width: 48px;\n  height: 48px;\n  background: url(" + __webpack_require__(5) + ") 50% 50% no-repeat;\n  background-size: auto 24px;\n  text-indent: -20000em;\n  overflow: hidden;\n  float: right;\n  opacity: .5;\n}\n.sliding-navigation__open-button::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n.no-svg .sliding-navigation__open-button {\n  background-image: url(" + __webpack_require__(6) + ");\n}\n.sliding-navigation__open-button:hover {\n  opacity: 1;\n}\n.sliding-navigation__back {\n  padding: 0 14px;\n  background: #222;\n}\n.sliding-navigation__back:active,\n.sliding-navigation__back:focus {\n  background: #333;\n}\n.sliding-navigation__back-button {\n  cursor: pointer;\n  padding: 0;\n  -webkit-appearance: none;\n  border: 0;\n  background: none;\n  text-shadow: none;\n  box-shadow: none;\n  text-align: left;\n  text-decoration: none;\n  color: inherit;\n  font: inherit;\n  position: relative;\n  z-index: 2999;\n  text-indent: 24px;\n  width: 100%;\n  height: 48px;\n  background: url(" + __webpack_require__(7) + ") 0 50% no-repeat;\n  background-size: auto 24px;\n  color: #fff;\n}\n.sliding-navigation__back-button::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n.no-svg .sliding-navigation__back-button {\n  background-image: url(" + __webpack_require__(8) + ");\n}\n", ""]);
 
 	// exports
 
@@ -395,7 +395,6 @@
 	function applyToTag(styleElement, obj) {
 		var css = obj.css;
 		var media = obj.media;
-		var sourceMap = obj.sourceMap;
 
 		if(media) {
 			styleElement.setAttribute("media", media)
@@ -413,7 +412,6 @@
 
 	function updateLink(linkElement, obj) {
 		var css = obj.css;
-		var media = obj.media;
 		var sourceMap = obj.sourceMap;
 
 		if(sourceMap) {
@@ -455,6 +453,8 @@
 	        return option;
 	    }
 
+	    var globalIdCounter = 0;
+
 	    return function(namespace, options) {
 	        namespace = namespace || 'dotsunited-sliding-navigation';
 
@@ -466,8 +466,22 @@
 	            backButtonElement: '<button class="' + namespace + '__back-button"></button>',
 	            backButtonLabel: function() {
 	                return $(this).children('a').eq(0).html();
+	            },
+	            openButtonLabel: function() {
+	                return $(this).children('a').eq(0).html();
 	            }
 	        }, options);
+
+	        var labelledById = function(el) {
+	            var id = el.attr('id');
+
+	            if (!id) {
+	                id =  namespace + '-labelledby-' + (++globalIdCounter);
+	                el.attr('id', id);
+	            }
+
+	            return id;
+	        };
 
 	        var parentClass = namespace + '__parent';
 	        var visibleClass = namespace + '__visible';
@@ -483,11 +497,11 @@
 	                .attr('role', 'menu')
 	                .eq(0)
 	                .addClass(visibleClass + ' ' + scrollClass)
+	                .attr('tabindex', '0')
 	                .attr('aria-activedescendant', activeId)
 	            ;
 
 	            container.find('a')
-	                .attr('tabindex', '-1')
 	                .hover(
 	                    function() {
 	                        $(this).parent().attr('id', activeId);
@@ -510,9 +524,6 @@
 	                        return;
 	                    }
 
-	                    el.attr('aria-haspopup', 'true');
-	                    sub.attr('aria-expanded', 'false');
-
 	                    var openButtonElement = option(
 	                        options.openButtonElement,
 	                        this
@@ -526,8 +537,11 @@
 	                            .removeClass(scrollClass)
 	                        ;
 
-	                        sub.addClass(visibleClass);
-	                        sub.attr('aria-expanded', 'true');
+	                        sub
+	                            .addClass(visibleClass)
+	                            .attr('aria-expanded', 'true')
+	                            .attr('aria-hidden', 'false')
+	                        ;
 
 	                        setTimeout(function() {
 	                            closest.removeClass(visibleClass);
@@ -535,16 +549,37 @@
 	                        }, 350);
 	                    }
 
+	                    var openButton = $(), labelledBy;
+
 	                    if (openButtonElement) {
-	                        $(openButtonElement)
+	                        openButton = $(openButtonElement)
 	                            .prependTo(el)
 	                            .on('click', onOpenClick)
 	                        ;
 	                    }
 
 	                    if (option(options.openOnItemClick, this)) {
-	                        el.on('click', '> a', onOpenClick);
+	                        labelledBy = el
+	                            .find('> a')
+	                            .attr('aria-haspopup', 'true')
+	                            .on('click', onOpenClick)
+	                        ;
+
+	                        openButton
+	                            .attr('aria-hidden', 'true')
+	                        ;
+	                    } else {
+	                        labelledBy = openButton
+	                            .attr('aria-haspopup', 'true')
+	                            .html(option(options.openButtonLabel, this))
+	                        ;
 	                    }
+
+	                    sub
+	                        .attr('aria-expanded', 'false')
+	                        .attr('aria-hidden', 'true')
+	                        .attr('aria-labelledby', labelledById(labelledBy))
+	                    ;
 
 	                    var backButtonElement = option(
 	                        options.backButtonElement,
@@ -563,10 +598,14 @@
 	                                var closest = el.closest('ul,ol')
 	                                    .removeClass(parentClass)
 	                                    .addClass(visibleClass)
+
 	                                ;
 
-	                                sub.removeClass(scrollClass);
-	                                sub.attr('aria-expanded', 'false');
+	                                sub
+	                                    .removeClass(scrollClass)
+	                                    .attr('aria-expanded', 'false')
+	                                    .attr('aria-hidden', 'true')
+	                                ;
 
 	                                setTimeout(function() {
 	                                    closest.addClass(scrollClass);
@@ -587,7 +626,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-	 * jQuery JavaScript Library v1.12.2
+	 * jQuery JavaScript Library v1.12.4
 	 * http://jquery.com/
 	 *
 	 * Includes Sizzle.js
@@ -597,7 +636,7 @@
 	 * Released under the MIT license
 	 * http://jquery.org/license
 	 *
-	 * Date: 2016-03-17T17:44Z
+	 * Date: 2016-05-20T17:17Z
 	 */
 
 	(function( global, factory ) {
@@ -653,7 +692,7 @@
 
 
 	var
-		version = "1.12.2",
+		version = "1.12.4",
 
 		// Define a local copy of jQuery
 		jQuery = function( selector, context ) {
@@ -7260,6 +7299,7 @@
 			if ( reliableHiddenOffsetsVal ) {
 				div.style.display = "";
 				div.innerHTML = "<table><tr><td></td><td>t</td></tr></table>";
+				div.childNodes[ 0 ].style.borderCollapse = "separate";
 				contents = div.getElementsByTagName( "td" );
 				contents[ 0 ].style.cssText = "margin:0;border:0;padding:0;display:none";
 				reliableHiddenOffsetsVal = contents[ 0 ].offsetHeight === 0;
@@ -7583,19 +7623,6 @@
 			styles = getStyles( elem ),
 			isBorderBox = support.boxSizing &&
 				jQuery.css( elem, "boxSizing", false, styles ) === "border-box";
-
-		// Support: IE11 only
-		// In IE 11 fullscreen elements inside of an iframe have
-		// 100x too small dimensions (gh-1764).
-		if ( document.msFullscreenElement && window.top !== window ) {
-
-			// Support: IE11 only
-			// Running getBoundingClientRect on a disconnected node
-			// in IE throws an error.
-			if ( elem.getClientRects().length ) {
-				val = Math.round( elem.getBoundingClientRect()[ name ] * 100 );
-			}
-		}
 
 		// some non-html elements return undefined for offsetWidth, so check for null/undefined
 		// svg - https://bugzilla.mozilla.org/show_bug.cgi?id=649285
@@ -10587,6 +10614,11 @@
 	}
 
 	function filterHidden( elem ) {
+
+		// Disconnected elements are considered hidden
+		if ( !jQuery.contains( elem.ownerDocument || document, elem ) ) {
+			return true;
+		}
 		while ( elem && elem.nodeType === 1 ) {
 			if ( getDisplay( elem ) === "none" || elem.type === "hidden" ) {
 				return true;
@@ -10953,13 +10985,6 @@
 
 
 
-	// Prevent auto-execution of scripts when no explicit dataType was provided (See gh-2432)
-	jQuery.ajaxPrefilter( function( s ) {
-		if ( s.crossDomain ) {
-			s.contents.script = false;
-		}
-	} );
-
 	// Install script dataType
 	jQuery.ajaxSetup( {
 		accepts: {
@@ -11240,7 +11265,7 @@
 			// If it fails, this function gets "jqXHR", "status", "error"
 			} ).always( callback && function( jqXHR, status ) {
 				self.each( function() {
-					callback.apply( self, response || [ jqXHR.responseText, status, jqXHR ] );
+					callback.apply( this, response || [ jqXHR.responseText, status, jqXHR ] );
 				} );
 			} );
 		}
