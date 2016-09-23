@@ -93,7 +93,7 @@
 
 
 	// module
-	exports.push([module.id, ".sliding-navigation {\n  -webkit-backface-visibility: hidden;\n  overflow: hidden;\n  position: absolute;\n  left: 0;\n  width: 50%;\n  max-width: 500px;\n  height: 300px;\n  background: #000;\n  font-family: sans-serif;\n  font-size: 16px;\n  line-height: 1;\n}\n.sliding-navigation * {\n  -webkit-backface-visibility: hidden;\n}\n.sliding-navigation ul {\n  position: absolute;\n  top: 0;\n  left: 100%;\n  z-index: 2000;\n  display: none;\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  -webkit-overflow-scrolling: touch;\n  -ms-overflow-style: -ms-autohiding-scrollbar;\n  width: 100%;\n  height: 100%;\n  transition: transform 350ms cubic-bezier(0.23, 1, 0.32, 1);\n}\n.no-csstransforms3d .sliding-navigation ul {\n  transition: left 350ms cubic-bezier(0.23, 1, 0.32, 1);\n}\n.sliding-navigation > ul {\n  left: 0;\n  display: block;\n}\n.sliding-navigation .sliding-navigation__parent {\n  transform: translate3d(-100%, 0, 0);\n  display: block;\n}\n.no-csstransforms3d .sliding-navigation .sliding-navigation__parent {\n  transform: translate3d(0, 0, 0);\n  left: 0;\n}\n.no-csstransforms3d .sliding-navigation > .sliding-navigation__parent {\n  left: -100%;\n}\n.sliding-navigation .sliding-navigation__visible {\n  z-index: 2001;\n  display: block;\n}\n.sliding-navigation .sliding-navigation__scroll {\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n.sliding-navigation li {\n  zoom: 1;\n}\n.sliding-navigation li:before,\n.sliding-navigation li:after {\n  content: \" \";\n  /* 1 */\n  display: table;\n  /* 2 */\n}\n.sliding-navigation li:after {\n  clear: both;\n}\n.sliding-navigation a {\n  display: block;\n  padding: 16px 20px;\n  color: #fff;\n  border-bottom: 1px solid #222;\n}\n.sliding-navigation a:active,\n.sliding-navigation a:focus {\n  background: #222;\n}\n.sliding-navigation2 {\n  left: auto;\n  right: 0;\n}\n.sliding-navigation__open-button {\n  cursor: pointer;\n  padding: 0;\n  -webkit-appearance: none;\n  border: 0;\n  background: none;\n  text-shadow: none;\n  box-shadow: none;\n  text-align: left;\n  text-decoration: none;\n  color: inherit;\n  font: inherit;\n  position: relative;\n  z-index: 2999;\n  width: 48px;\n  height: 48px;\n  background: url(" + __webpack_require__(5) + ") 50% 50% no-repeat;\n  background-size: auto 24px;\n  text-indent: -20000em;\n  overflow: hidden;\n  float: right;\n  opacity: .5;\n}\n.sliding-navigation__open-button::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n.no-svg .sliding-navigation__open-button {\n  background-image: url(" + __webpack_require__(6) + ");\n}\n.sliding-navigation__open-button:hover {\n  opacity: 1;\n}\n.sliding-navigation__back {\n  padding: 0 14px;\n  background: #222;\n}\n.sliding-navigation__back:active,\n.sliding-navigation__back:focus {\n  background: #333;\n}\n.sliding-navigation__back-button {\n  cursor: pointer;\n  padding: 0;\n  -webkit-appearance: none;\n  border: 0;\n  background: none;\n  text-shadow: none;\n  box-shadow: none;\n  text-align: left;\n  text-decoration: none;\n  color: inherit;\n  font: inherit;\n  position: relative;\n  z-index: 2999;\n  text-indent: 24px;\n  width: 100%;\n  height: 48px;\n  background: url(" + __webpack_require__(7) + ") 0 50% no-repeat;\n  background-size: auto 24px;\n  color: #fff;\n}\n.sliding-navigation__back-button::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n.no-svg .sliding-navigation__back-button {\n  background-image: url(" + __webpack_require__(8) + ");\n}\n", ""]);
+	exports.push([module.id, ".sliding-navigation {\n  -webkit-backface-visibility: hidden;\n  overflow: hidden;\n  position: absolute;\n  left: 0;\n  width: 50%;\n  max-width: 500px;\n  height: 300px;\n  background: #000;\n  font-family: sans-serif;\n  font-size: 16px;\n  line-height: 1;\n}\n.sliding-navigation * {\n  -webkit-backface-visibility: hidden;\n}\n.sliding-navigation ul {\n  position: absolute;\n  top: 0;\n  left: 100%;\n  z-index: 2000;\n  display: none;\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  -webkit-overflow-scrolling: touch;\n  -ms-overflow-style: -ms-autohiding-scrollbar;\n  width: 100%;\n  height: 100%;\n  transition: transform 350ms cubic-bezier(0.23, 1, 0.32, 1);\n}\n.no-csstransforms3d .sliding-navigation ul {\n  transition: left 350ms cubic-bezier(0.23, 1, 0.32, 1);\n}\n.sliding-navigation > ul {\n  left: 0;\n  display: block;\n}\n.sliding-navigation .sliding-navigation__parent {\n  transform: translate3d(-100%, 0, 0);\n  display: block;\n}\n.no-csstransforms3d .sliding-navigation .sliding-navigation__parent {\n  transform: translate3d(0, 0, 0);\n  left: 0;\n}\n.no-csstransforms3d .sliding-navigation > .sliding-navigation__parent {\n  left: -100%;\n}\n.sliding-navigation .sliding-navigation__visible {\n  z-index: 2001;\n  display: block;\n}\n.sliding-navigation .sliding-navigation__scroll {\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n.sliding-navigation li {\n  zoom: 1;\n}\n.sliding-navigation li:before,\n.sliding-navigation li:after {\n  content: \" \";\n  /* 1 */\n  display: table;\n  /* 2 */\n}\n.sliding-navigation li:after {\n  clear: both;\n}\n.sliding-navigation a,\n.sliding-navigation span {\n  display: block;\n  padding: 16px 20px;\n  color: #fff;\n  border-bottom: 1px solid #222;\n}\n.sliding-navigation a:active,\n.sliding-navigation span:active,\n.sliding-navigation a:focus,\n.sliding-navigation span:focus {\n  background: #222;\n}\n.sliding-navigation2 {\n  left: auto;\n  right: 0;\n}\n.sliding-navigation__open-button {\n  cursor: pointer;\n  padding: 0;\n  -webkit-appearance: none;\n  border: 0;\n  background: none;\n  text-shadow: none;\n  box-shadow: none;\n  text-align: left;\n  text-decoration: none;\n  color: inherit;\n  font: inherit;\n  position: relative;\n  z-index: 2999;\n  width: 48px;\n  height: 48px;\n  background: url(" + __webpack_require__(5) + ") 50% 50% no-repeat;\n  background-size: auto 24px;\n  text-indent: -20000em;\n  overflow: hidden;\n  float: right;\n  opacity: .5;\n}\n.sliding-navigation__open-button::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n.no-svg .sliding-navigation__open-button {\n  background-image: url(" + __webpack_require__(6) + ");\n}\n.sliding-navigation__open-button:hover {\n  opacity: 1;\n}\n.sliding-navigation__back {\n  padding: 0 14px;\n  background: #222;\n}\n.sliding-navigation__back:active,\n.sliding-navigation__back:focus {\n  background: #333;\n}\n.sliding-navigation__back-button {\n  cursor: pointer;\n  padding: 0;\n  -webkit-appearance: none;\n  border: 0;\n  background: none;\n  text-shadow: none;\n  box-shadow: none;\n  text-align: left;\n  text-decoration: none;\n  color: inherit;\n  font: inherit;\n  position: relative;\n  z-index: 2999;\n  text-indent: 24px;\n  width: 100%;\n  height: 48px;\n  background: url(" + __webpack_require__(7) + ") 0 50% no-repeat;\n  background-size: auto 24px;\n  color: #fff;\n}\n.sliding-navigation__back-button::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n.no-svg .sliding-navigation__back-button {\n  background-image: url(" + __webpack_require__(8) + ");\n}\n", ""]);
 
 	// exports
 
@@ -465,10 +465,10 @@
 	            backElement: '<li class="' + namespace + '__back"></li>',
 	            backButtonElement: '<button class="' + namespace + '__back-button"></button>',
 	            backButtonLabel: function() {
-	                return $(this).children('a').eq(0).html();
+	                return $(this).children('a,span').eq(0).html();
 	            },
 	            openButtonLabel: function() {
-	                return $(this).children('a').eq(0).html();
+	                return $(this).children('a,span').eq(0).html();
 	            }
 	        }, options);
 
@@ -502,10 +502,10 @@
 	            ;
 
 	            container
-	                .on('mouseenter', 'a, button', function() {
+	                .on('mouseenter', 'a,span,button', function() {
 	                    $(this).parent().attr('id', activeId);
 	                })
-	                .on('mouseleave', 'a, button', function() {
+	                .on('mouseleave', 'a,span,button', function() {
 	                    $(this).parent().removeAttr('id');
 	                })
 	            ;
@@ -558,7 +558,7 @@
 
 	                    if (option(options.openOnItemClick, this)) {
 	                        labelledBy = el
-	                            .find('> a')
+	                            .find('> a,> span')
 	                            .attr('aria-haspopup', 'true')
 	                            .on('click', onOpenClick)
 	                        ;
