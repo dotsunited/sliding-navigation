@@ -17,16 +17,16 @@
     "jquery": ">=1.7"
   },
   "devDependencies": {
-    "css-loader": "^0.23.1",
-    "file-loader": "^0.8.5",
+    "css-loader": "^0.28.11",
     "jquery": "^1.11.3",
-    "less": "^2.5.3",
-    "less-loader": "^2.2.2",
-    "style-loader": "^0.13.0",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.12.9"
+    "less": "^3.5.2",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8"
   },
   "scripts": {
-    "build-demo": "webpack --config demo/_src/webpack.config.js --progress --profile --colors"
+    "build-demo": "webpack --config demo/_src/webpack.config.js --mode=development"
   }
 }

@@ -1,5 +1,4 @@
 var path = require('path');
-var webpack = require('webpack');
 
 module.exports = {
     entry: {
@@ -8,12 +7,22 @@ module.exports = {
     output: {
         path: path.join(__dirname, '..'),
         publicPath: './',
-        filename: '[name].js?[chunkhash]'
+        filename: '[name].js'
     },
     module: {
-        loaders: [
-            { test: /\.less$/, loader: 'style-loader!css-loader!less-loader' },
-            { test: /\.(gif|png|jpe?g|svg)$/, loader: 'url-loader' }
+        rules: [
+            {
+                test: /\.less$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'less-loader'
+                ]
+            },
+            {
+                test: /\.(gif|png|jpe?g|svg)$/,
+                use: 'url-loader'
+            }
         ]
     }
 };
