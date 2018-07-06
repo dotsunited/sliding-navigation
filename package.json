@@ -13,6 +13,9 @@
     "url": "https://github.com/dotsunited/sliding-navigation.git"
   },
   "license": "MIT",
+  "files": [
+    "lib"
+  ],
   "peerDependencies": {
     "jquery": ">=1.7"
   },
