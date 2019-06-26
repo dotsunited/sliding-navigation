@@ -20,7 +20,7 @@
     "jquery": ">=1.7"
   },
   "devDependencies": {
-    "css-loader": "^0.28.11",
+    "css-loader": "^3.0.0",
     "jquery": "^1.11.3",
     "less": "^3.5.2",
     "less-loader": "^4.1.0",
